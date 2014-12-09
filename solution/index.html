@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hogwarts Registrar</title>
+</head>
+<body>
+  <h4>Welcome, Professor. Today is {{date}}.</h4>
+  <p>There are currently {{number_students}} enrolled.</p>
+  <a href="/students">List All Students</a>
+
+  <h4>Add a Student</h4>
+  <form action="/students" method="POST">
+    <label>
+      Name:
+      <input type="text" name="name"/>  
+    </label>
+    
+    <label>
+      Age:
+      <input type="text" name="age"/>  
+    </label>
+    
+    <label>
+      Favorite Spell:
+      <input type="text" name="spell"/>
+    </label>
+    <button>Add Wizard</button>
+  </form>
+</body>
+</html>
